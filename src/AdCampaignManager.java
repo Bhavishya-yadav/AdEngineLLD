@@ -4,13 +4,13 @@ import java.util.Map;
 public class AdCampaignManager {
     private Map<String, AdCampaign> campaigns;
 
-    private AdCampaignManager campaignManager = new AdCampaignManager();
+    private static AdCampaignManager campaignManager = new AdCampaignManager();
 
     private AdCampaignManager() {
         campaigns = new HashMap<>();
     }
 
-    public AdCampaignManager getInstance() {
+    public static AdCampaignManager getInstance() {
         return campaignManager;
     }
 

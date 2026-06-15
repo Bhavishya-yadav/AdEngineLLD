@@ -19,6 +19,9 @@ public class AdEngineApplication {
         AdConstraintsInterface ageConstraint = new AgeAdConstraint();
         AdCampaign campaign = new AdCampaign(advertiserId, 10, "https://adidas.com", AdType.IMAGE, 30, 25, 
         "Rewari", List.of(ageConstraint));
+        AdCampaignManager adCampaignManager = AdCampaignManager.getInstance();
+        adCampaignManager.addCampaigns(campaign);
+
 
         AdEngineManager adEngineManager = AdEngineManager.getInstance();
 
