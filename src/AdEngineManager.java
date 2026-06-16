@@ -55,6 +55,9 @@ public class AdEngineManager {
                 if(front.isBefore(windowStartTime)) {
                     globalHistoryQueue.poll();
                     condition2 = true;
+                } else {
+                    condition2 = false;
+                    break;
                 }
             }
             Advertiser advertiser = advertiserManager.getAdvertiserById(campaign.getAdvertiserId());
