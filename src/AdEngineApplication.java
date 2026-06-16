@@ -45,7 +45,6 @@ public class AdEngineApplication {
         AdEngineManager adEngineManager = AdEngineManager.getInstance();
 
         adEngineManager.showCampaign(user1Id, campaign);
-
         adEngineManager.showCampaign(user2Id, campaign);
         adEngineManager.showCampaign(user3Id, campaign);
         adEngineManager.showCampaign(user4Id, campaign);
